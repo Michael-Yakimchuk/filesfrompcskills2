@@ -1,0 +1,54 @@
+/* FONTS */
+@font-face {
+  font-family: "Avgardm";
+  src: url("../Logo/Logo/Font/Avgardm_0.TTF");
+}
+
+@font-face {
+  font-family: "avgardmi"
+  src: url(../Logo/Logo/Font/avgardmi_0.TTF);
+}
+
+@font-face {
+  font-family: "slogan";
+  src: url(../Logo/Logo/Font/SLOGAN_N_0.TTF);
+}
+
+body {
+  background-color: white;
+}
+
+.showcase {
+  height: 70vh;
+  background: url("../Images/rundlle.jpg") center fixed;
+  background-size: cover;
+
+}
+.title {
+  border-bottom: solid 2px rgb(180, 220, 86);
+}
+
+li {
+  padding-top: 15px;
+  margin-left: 25px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+  /*Media Query*/
+@media (max-width: 1000px) {
+  /* BELOW FOLD 1 CARDS */
+  .card-container {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  
+  @media (max-width: 600px) {
+  /* BELOW FOLD 1 CARDS */
+  .card img {
+    height: 300px;
+  }

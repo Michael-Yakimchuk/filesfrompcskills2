@@ -1,0 +1,71 @@
+/* FONTS */
+@font-face {
+  font-family: "Avgardm";
+  src: url("../Logo/Logo/Font/Avgardm_0.TTF");
+}
+
+@font-face {
+  font-family: "avgardmi"
+  src: url(../Logo/Logo/Font/avgardmi_0.TTF);
+}
+
+@font-face {
+  font-family: "slogan";
+  src: url(../Logo/Logo/Font/SLOGAN_N_0.TTF);
+}
+
+body {
+  background-color: white;
+}
+
+.showcase {
+  height: 70vh;
+  background: url("../Images/rundlle.jpg") center fixed;
+  background-size: cover;
+
+}
+
+.title {
+  border-bottom: solid 2px rgb(180, 220, 86);
+}
+
+h1 {
+  margin: 15px 0;
+}
+
+.card-grid .card {
+  border: 2px solid rgb(80, 88, 93);
+  border-radius: 10px;
+  box-shadow: 5px 5px rgb(80, 88, 93);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.card-grid .card h2 {
+  border-bottom: solid 2px rgb(180, 220, 86);
+}
+
+.card-grid .card p {
+  margin: 15px 0;
+}
+
+.card-grid .card a {
+  margin-top: auto;
+  text-decoration: none;
+  background-color: rgb(80, 88, 93);
+  color: white;
+  text-align: center;
+  height: 30px;
+}
+
+.card-grid .card a:hover {
+  background-color:  rgb(180, 220, 86);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}

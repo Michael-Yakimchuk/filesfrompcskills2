@@ -1,0 +1,87 @@
+/* FONTS */
+@font-face {
+  font-family: "Avgardm";
+  src: url("../Logo/Logo/Font/Avgardm_0.TTF");
+}
+
+@font-face {
+  font-family: "avgardmi"
+  src: url(../Logo/Logo/Font/avgardmi_0.TTF);
+}
+
+@font-face {
+  font-family: "slogan";
+  src: url(../Logo/Logo/Font/SLOGAN_N_0.TTF);
+}
+
+/* SHOWCASE */
+
+.showcase {
+  height: 60vh;
+  background: url("../Images/OurOffice.jpg") center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start
+}
+
+/* BELOW FOLD 1 */
+
+.below-fold-1 {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.title {
+  font-family:"slogan";
+  border-bottom: solid 2px rgb(180, 220, 86);
+}
+
+.below-fold-1 h1 {
+  margin: 20px 0;
+}
+
+#form {
+  display: block;
+  justify-content: left;
+  height: 200px;
+  padding: 25px 25px;
+}
+
+form input {
+  margin-top: 10px;
+}
+
+form textarea {
+  margin-top: 10px;
+}
+
+.below-fold-1 h3 {
+  margin: 10px 0;
+}
+
+.below-fold-1 p {
+  letter-spacing: 0.75px;
+}
+
+.below-fold-1 .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+/* Media Queries */
+
+@media (max-width: 800px) {
+  /* BELOW FOLD 1 CARDS */
+  .below-fold-1 .card-container {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Maps */
+  iframe {
+    height: 150px;
+    width: 250px;
+  }
+}
